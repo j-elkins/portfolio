@@ -16,7 +16,7 @@
   </head>
   <body>
     <header class="hero">
-      <img src="/headshot.png" alt="Headshot" height="200px" width="200px" />
+      <img src="/headshot.png" id="headshot" alt="Headshot" />
       <h1>I'm Jasmine</h1>
       <h2>a Software Engineering Student</h2>
       <div id="iconContainer">
@@ -26,6 +26,7 @@
         <i class="fab fa-blogger"></i>
       </div>
     </header>
+
     <main>
       <section id="about" class="section">
         <h1>About Me</h1>
@@ -36,70 +37,119 @@
           </div>
         </div>
       </section>
-      <section>
+
+      <section id="toolbox" class="section">
         <h1>Toolbox</h1>
-        <i class="fa-brands fa-html5"></i>
-        <i class="fa-brands fa-css3-alt"></i>
-        <i class="fa-brands fa-js-square"></i>
-        <i class="fa-brands fa-github"></i>
-        <a href="">VS Code</a>
-        <a href="">Responsive Websites</a>
+        <div id="icons">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-github"></i>
+          <!-- <a href="">VS Code</a> -->
+          <!-- <a href="">Responsive Websites</a> -->
+        </div>
       </section>
-      <section>
+
+      <section id="recentWork" class="section">
         <h1>Recent Work</h1>
         <article>
-          <img
-            src="/etchasketch.png"
-            alt="Screenshot of Etch-A-Sketch app"
-            height="300px"
-            width="400px"
-          />
+          <div class="img-container">
+            <img
+              src="/etchasketch.png"
+              alt="Screenshot of Etch-A-Sketch app"
+              height="300px"
+              width="400px"
+              class="thumbnail"
+            />
+            <div class="middle">
+              <div class="text">
+                <a href="https://j-elkins.github.io/etch-a-sketch/">View</a>
+              </div>
+            </div>
+          </div>
           <h4>Etch-A-Sketch</h4>
           <p>Features multiple colors and rainbow mode</p>
         </article>
+
         <article>
-          <img
-            src="/booklibrary.png"
-            alt="Screenshot of Book Library app"
-            height="300px"
-            width="400px"
-          />
+          <div class="img-container">
+            <img
+              src="/booklibrary.png"
+              alt="Screenshot of Book Library app"
+              height="300px"
+              width="400px"
+              class="thumbnail"
+            />
+            <div class="middle">
+              <div class="text">
+                <a href="https://j-elkins.github.io/book-library/">View</a>
+              </div>
+            </div>
+          </div>
           <h4>Book Library</h4>
           <p>Create a list of books you've read or want to read</p>
         </article>
+
         <article>
-          <img
-            src="/rockpaperscissors.png"
-            alt="Screenshot of Rock, Paper, Scissors app"
-            height="300px"
-            width="400px"
-          />
+          <div class="img-container">
+            <img
+              src="/rockpaperscissors.png"
+              alt="Screenshot of Rock, Paper, Scissors app"
+              height="300px"
+              width="400px"
+              class="thumbnail"
+            />
+            <div class="middle">
+              <div class="text">
+                <a href="https://j-elkins.github.io/rock-paper-scissors/"">View</a>
+              </div>
+            </div>
+          </div>
           <h4>Rock, Paper, Scissors</h4>
           <p>Play a game of 5 rounds against the computer</p>
         </article>
+
         <article>
-          <img
-            src="/tictactoenew.jpg"
-            alt="Screenshot of Tic Tac Toe app"
-            height="300px"
-            width="400px"
-          />
+          <div class="img-container">
+            <img
+              src="/tictactoenew.jpg"
+              alt="Screenshot of Tic Tac Toe app"
+              height="300px"
+              width="400px"
+              class="thumbnail"
+            />
+            <div class="middle">
+              <div class="text">
+                <a href="https://j-elkins.github.io/tic-tac-toe/">View</a>
+              </div>
+            </div>
+          </div>
           <h4>Tic Tac Toe</h4>
           <p>Play a game against another player</p>
         </article>
+
         <article>
-          <img
-            src="/calculator.png"
-            alt="Screenshot of Calculator app"
-            height="300px"
-            width="400px"
-          />
-          <h4>Etch-A-Sketch</h4>
+          <div class="img-container">
+            <img
+              src="/calculator.png"
+              alt="Screenshot of Calculator app"
+              height="300px"
+              width="400px"
+              class="thumbnail"
+            />
+            <div class="middle">
+              <div class="text">
+                <a href="https://j-elkins.github.io/calculator/">View</a>
+              </div>
+            </div>
+          </div>
+          <h4>Calculator</h4>
           <p>Simple calculator with 4 calculation functions</p>
         </article>
         <button>View Full Portfolio</button>
       </section>
-      <section>
+
+      <section id="contact" class="section">
         <h1>Get in Touch</h1>
         <div id="contactContainer">
           <div id="left">
@@ -109,7 +159,7 @@
             <button>Send Message</button>
           </div>
           <div id="right">
-            <i class="fas fa-earth-americas"></i>
+            <!-- <i class="fas fa-earth-americas"></i> -->
             <i class="fas fa-house"></i>
             <i class="fas fa-envelope"></i>
             <i class="fab fa-linkedin"></i>

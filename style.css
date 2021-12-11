@@ -53,6 +53,13 @@ button {
   color: rgba(255, 218, 185, 0.756);
 }
 
+#headshot {
+  border: none;
+  border-radius: 50px;
+  width: 100px;
+  height: auto;
+}
+
 #iconContainer {
   display: flex;
   gap: 20px;
@@ -68,7 +75,57 @@ button {
   background-size: cover;
 }
 /* TOOLBOX -------------------------------------- */
+#icons {
+  font-size: 2em;
+}
 /* RECENT WORK ---------------------------------- */
+.img-container {
+  position: relative;
+  width: 50%;
+}
+
+.thumbnail {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle a {
+  color: rgb(242, 227, 227);
+  text-decoration: none;
+}
+
+.img-container:hover .thumbnail {
+  opacity: 0.3;
+}
+
+.img-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #333;
+  color: whitesmoke;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 10px;
+}
+
 /* GET IN TOUCH --------------------------------- */
 #contactContainer {
   display: flex;
