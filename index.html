@@ -20,16 +20,17 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
   </head>
+
   <body>
     <header class="hero">
       <img src="/headshot.png" id="headshot" alt="Headshot" />
       <h1>I'm Jasmine</h1>
-      <h2>
-        a Software Engineering Student, <br />
-        rock climber, scientist, artist, and world explorer
-      </h2>
+      <h2>a Software Engineering Student</h2>
+      <h3>rock climber, scientist, artist, and world explorer</h3>
       <div id="iconContainer">
         <a href="mailto:jasmine.elkins@gmail.com" target="_blank"
           ><i class="fas fa-envelope"></i
@@ -83,7 +84,8 @@
 
       <section id="recentWork" class="section">
         <h1>Recent Work</h1>
-        <div id="gridContainer">
+
+        <div class="gridContainer">
           <article>
             <div class="img-container">
               <img
@@ -92,7 +94,7 @@
                 class="thumbnail"
               />
               <div class="middle">
-                <div class="text">
+                <div class="viewButton">
                   <a
                     href="https://jasmineelkins.github.io/etch-a-sketch/"
                     target="_blank"
@@ -113,7 +115,7 @@
                 class="thumbnail"
               />
               <div class="middle">
-                <div class="text">
+                <div class="viewButton">
                   <a
                     href="https://jasmineelkins.github.io/book-library/"
                     target="_blank"
@@ -134,7 +136,7 @@
                 class="thumbnail"
               />
               <div class="middle">
-                <div class="text">
+                <div class="viewButton">
                   <a
                     href="https://jasmineelkins.github.io/rock-paper-scissors/"
                     target="_blank"
@@ -155,7 +157,7 @@
                 class="thumbnail"
               />
               <div class="middle">
-                <div class="text">
+                <div class="viewButton">
                   <a
                     href="https://jasmineelkins.github.io/tic-tac-toe/"
                     target="_blank"
@@ -167,7 +169,18 @@
             <h4>Tic Tac Toe</h4>
             <p>Play a game against another player</p>
           </article>
+        </div>
 
+        <button type="button" class="collapsibleBtn">
+          <i
+            onClick="toggleIcon(this)"
+            class="fas fa-chevron-down"
+            id="icon"
+            style="color: rgb(75, 75, 75)"
+          ></i
+          ><span id="span">&nbsp View Full Portfolio</span>
+        </button>
+        <div id="fullPortfolio" class="gridContainer">
           <article>
             <div class="img-container">
               <img
@@ -176,7 +189,7 @@
                 class="thumbnail"
               />
               <div class="middle">
-                <div class="text">
+                <div class="viewButton">
                   <a
                     href="https://jasmineelkins.github.io/calculator/"
                     target="_blank"
@@ -189,17 +202,20 @@
             <p>Simple calculator with 4 calculation functions</p>
           </article>
         </div>
-
-        <button>View Full Portfolio</button>
       </section>
 
       <section id="contact" class="section">
         <h1 id="contactHeader">Get in Touch</h1>
-        <div id="contactContainer">
+        <div id="contactContainer" class="content">
           <div id="left">
             <input type="text" placeholder="Name" id="name" />
             <input type="text" placeholder="Email" id="email" />
-            <input type="text" placeholder="Message" id="message" />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+            <!-- <input type="text" placeholder="Message" id="message" /> -->
             <button id="sendBtn">Send Message</button>
           </div>
 
