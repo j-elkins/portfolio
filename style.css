@@ -110,6 +110,10 @@ i {
   text-align: center;
 }
 
+#bio {
+  margin-top: 20px;
+}
+
 /* TOOLBOX -------------------------------------- */
 #toolIconsDiv {
   display: flex;
@@ -123,24 +127,22 @@ i {
 }
 
 #vsIcon {
-  transform: scale(1.5);
+  height: 3em;
 }
 
 .tool {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: nowrap;
   text-align: center;
   margin: 10px;
   padding: 10px;
-  border: 1px solid red;
 }
 
 .tool p {
   display: block;
   text-align: center;
-}
-
-.tool.vsc {
-  padding-bottom: -20px;
 }
 
 /* RECENT WORK ---------------------------------- */
@@ -156,8 +158,6 @@ i {
 }
 
 #fullPortfolio {
-  display: none;
-  overflow: hidden;
   margin-top: 30px;
 }
 
