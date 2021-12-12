@@ -12,6 +12,14 @@
       src="https://kit.fontawesome.com/131bb444ae.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -20,10 +28,16 @@
       <h1>I'm Jasmine</h1>
       <h2>a Software Engineering Student</h2>
       <div id="iconContainer">
-        <i class="fas fa-envelope"></i>
-        <i class="fab fa-github"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-blogger"></i>
+        <a href="mailto:jasmine.elkins@gmail.com" target="_blank"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a href="https://github.com/jasmineelkins" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/jasmine-elkins/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="#"><i class="fab fa-blogger"></i></a>
       </div>
     </header>
 
@@ -40,133 +54,178 @@
 
       <section id="toolbox" class="section">
         <h1>Toolbox</h1>
-        <div id="icons">
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-js-square"></i>
-          <i class="fab fa-github"></i>
-          <!-- <a href="">VS Code</a> -->
-          <!-- <a href="">Responsive Websites</a> -->
+        <div id="toolIconsDiv">
+          <div class="tool">
+            <i class="fab fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="tool">
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div class="tool">
+            <i class="fab fa-js-square"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="tool">
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+          </div>
         </div>
       </section>
 
       <section id="recentWork" class="section">
         <h1>Recent Work</h1>
-        <article>
-          <div class="img-container">
-            <img
-              src="/etchasketch.png"
-              alt="Screenshot of Etch-A-Sketch app"
-              height="300px"
-              width="400px"
-              class="thumbnail"
-            />
-            <div class="middle">
-              <div class="text">
-                <a href="https://j-elkins.github.io/etch-a-sketch/">View</a>
+        <div id="gridContainer">
+          <article>
+            <div class="img-container">
+              <img
+                src="/etchasketch.png"
+                alt="Screenshot of Etch-A-Sketch app"
+                class="thumbnail"
+              />
+              <div class="middle">
+                <div class="text">
+                  <a
+                    href="https://jasmineelkins.github.io/etch-a-sketch/"
+                    target="_blank"
+                    >View</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <h4>Etch-A-Sketch</h4>
-          <p>Features multiple colors and rainbow mode</p>
-        </article>
+            <h4>Etch-A-Sketch</h4>
+            <p>Features multiple colors and rainbow mode</p>
+          </article>
 
-        <article>
-          <div class="img-container">
-            <img
-              src="/booklibrary.png"
-              alt="Screenshot of Book Library app"
-              height="300px"
-              width="400px"
-              class="thumbnail"
-            />
-            <div class="middle">
-              <div class="text">
-                <a href="https://j-elkins.github.io/book-library/">View</a>
+          <article>
+            <div class="img-container">
+              <img
+                src="/booklibrary.png"
+                alt="Screenshot of Book Library app"
+                class="thumbnail"
+              />
+              <div class="middle">
+                <div class="text">
+                  <a
+                    href="https://jasmineelkins.github.io/book-library/"
+                    target="_blank"
+                    >View</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <h4>Book Library</h4>
-          <p>Create a list of books you've read or want to read</p>
-        </article>
+            <h4>Book Library</h4>
+            <p>Create a list of books you've read or want to read</p>
+          </article>
 
-        <article>
-          <div class="img-container">
-            <img
-              src="/rockpaperscissors.png"
-              alt="Screenshot of Rock, Paper, Scissors app"
-              height="300px"
-              width="400px"
-              class="thumbnail"
-            />
-            <div class="middle">
-              <div class="text">
-                <a href="https://j-elkins.github.io/rock-paper-scissors/"">View</a>
+          <article>
+            <div class="img-container">
+              <img
+                src="/rockpaperscissors.png"
+                alt="Screenshot of Rock, Paper, Scissors app"
+                class="thumbnail"
+              />
+              <div class="middle">
+                <div class="text">
+                  <a
+                    href="https://jasmineelkins.github.io/rock-paper-scissors/"
+                    target="_blank"
+                    >View</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <h4>Rock, Paper, Scissors</h4>
-          <p>Play a game of 5 rounds against the computer</p>
-        </article>
+            <h4>Rock, Paper, Scissors</h4>
+            <p>Play a game of 5 rounds against the computer</p>
+          </article>
 
-        <article>
-          <div class="img-container">
-            <img
-              src="/tictactoenew.jpg"
-              alt="Screenshot of Tic Tac Toe app"
-              height="300px"
-              width="400px"
-              class="thumbnail"
-            />
-            <div class="middle">
-              <div class="text">
-                <a href="https://j-elkins.github.io/tic-tac-toe/">View</a>
+          <article>
+            <div class="img-container">
+              <img
+                src="/tictactoenew.jpg"
+                alt="Screenshot of Tic Tac Toe app"
+                class="thumbnail"
+              />
+              <div class="middle">
+                <div class="text">
+                  <a
+                    href="https://jasmineelkins.github.io/tic-tac-toe/"
+                    target="_blank"
+                    >View</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <h4>Tic Tac Toe</h4>
-          <p>Play a game against another player</p>
-        </article>
+            <h4>Tic Tac Toe</h4>
+            <p>Play a game against another player</p>
+          </article>
 
-        <article>
-          <div class="img-container">
-            <img
-              src="/calculator.png"
-              alt="Screenshot of Calculator app"
-              height="300px"
-              width="400px"
-              class="thumbnail"
-            />
-            <div class="middle">
-              <div class="text">
-                <a href="https://j-elkins.github.io/calculator/">View</a>
+          <article>
+            <div class="img-container">
+              <img
+                src="/calculator.png"
+                alt="Screenshot of Calculator app"
+                class="thumbnail"
+              />
+              <div class="middle">
+                <div class="text">
+                  <a
+                    href="https://jasmineelkins.github.io/calculator/"
+                    target="_blank"
+                    >View</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <h4>Calculator</h4>
-          <p>Simple calculator with 4 calculation functions</p>
-        </article>
+            <h4>Calculator</h4>
+            <p>Simple calculator with 4 calculation functions</p>
+          </article>
+        </div>
+
         <button>View Full Portfolio</button>
       </section>
 
       <section id="contact" class="section">
-        <h1>Get in Touch</h1>
+        <h1 id="contactHeader">Get in Touch</h1>
         <div id="contactContainer">
           <div id="left">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Message" />
-            <button>Send Message</button>
+            <input type="text" placeholder="Name" id="name" />
+            <input type="text" placeholder="Email" id="email" />
+            <input type="text" placeholder="Message" id="message" />
+            <button id="sendBtn">Send Message</button>
           </div>
+
           <div id="right">
-            <!-- <i class="fas fa-earth-americas"></i> -->
-            <i class="fas fa-house"></i>
-            <i class="fas fa-envelope"></i>
-            <i class="fab fa-linkedin"></i>
+            <div class="contactIcon">
+              <ion-icon name="earth-outline" id="earth"></ion-icon>
+              <p>New York, NY</p>
+              /div>
+            </div>
+            <div class="contactIcon">
+              <i class="fas fa-envelope"></i>
+              <p>jasmine.elkins@gmail.com</p>
+              <p></p>
+            </div>
+
+            <div class="contactIcon">
+              <i class="fab fa-linkedin"></i>
+              <p>
+                https://www.linkedin.com/in/<br
+                  class="rwd-break"
+                />jasmine-elkins/
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <!-- <footer>
+      <p>Designed & built by Jasmine Elkins &nbsp; | &nbsp; November 2021</p>
+
+      <a href="https://github.com/j-elkins/tic-tac-toe">
+        <i class="fab fa-github" style="font-size: 1.5em; color: black"></i>
+      </a>
+    </footer> -->
   </body>
 </html>
