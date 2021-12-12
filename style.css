@@ -23,6 +23,11 @@ button {
   background: rgb(227, 176, 176);
   font-size: 16px;
   margin-top: 50px;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  transform: scale(1.2);
 }
 
 .section {
@@ -32,6 +37,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 #right {
@@ -76,9 +82,17 @@ i {
 
 #iconContainer a {
   color: peachpuff;
+  transition: 0.5s ease;
+}
+
+#iconContainer a:hover {
+  transform: scale(1.3);
 }
 
 /* ABOUT ME ------------------------------------- */
+#about {
+  border-top: none;
+}
 .photobox {
   background: url("/teddy.JPG");
   background-position: fixed;
@@ -102,15 +116,25 @@ i {
   font-size: 3em;
 }
 
+#vsIcon {
+  transform: scale(1.5);
+}
+
 .tool {
   display: inline-block;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid red;
 }
 
 .tool p {
   display: block;
   text-align: center;
+}
+
+.tool.vsc {
+  padding-bottom: -20px;
 }
 
 /* RECENT WORK ---------------------------------- */
@@ -179,12 +203,14 @@ p {
   flex-direction: row;
   padding-bottom: 20px;
   gap: 60px;
+  margin-top: 20px;
 }
 
 input {
   font-family: "Gruppo", Calibri, sans-serif;
   font-size: 16px;
   text-align: left;
+  padding: 10px;
 }
 
 #left {
@@ -192,22 +218,14 @@ input {
   grid-template-columns: repeat(2, 200px);
   grid-template-rows: 20px 100px auto;
   column-gap: 5px;
-  row-gap: 5px;
-}
-
-#left #name {
-  grid-column: 1 / 2;
-}
-
-#left #email {
-  grid-column: 2 / 3;
+  row-gap: 10px;
 }
 
 #left #message {
   grid-column: 1 / 3;
 }
 
-#left #sendBtn {
+#sendBtn {
   display: block;
   margin-top: 10px;
 }
@@ -215,12 +233,15 @@ input {
 #right {
   display: flex;
   flex-direction: column;
-  /* width: 200px; */
+  gap: 10px;
+}
+
+.contactIcon {
+  display: flex;
   gap: 10px;
 }
 
 #right i {
-  /* float: left; */
   font-size: 1.5em;
 }
 
