@@ -24,6 +24,7 @@ button {
   font-size: 16px;
   margin-top: 50px;
   transition: 0.5s ease;
+  width: 200px;
 }
 
 button:hover {
@@ -46,6 +47,10 @@ button:hover {
 
 i {
   font-family: FontAwesome;
+}
+
+a {
+  color: #333;
 }
 
 /* HEADER --------------------------------------- */
@@ -78,6 +83,13 @@ i {
   height: auto;
 }
 
+#locationIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 #iconContainer {
   display: flex;
   gap: 20px;
@@ -99,19 +111,36 @@ i {
 #about {
   border-top: none;
 }
-.photobox {
-  background: url("/teddy.JPG");
-  background-position: fixed;
+
+.tagline {
+  margin: 10px;
+  font-style: italic;
+  color: rgb(112, 50, 75);
+}
+
+#photoBox {
+  /* background: url("/teddy.JPG");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
 #innerBox {
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-#bio {
-  margin-top: 20px;
+#innerBox button a {
+  text-decoration: none;
 }
 
 /* TOOLBOX -------------------------------------- */
@@ -298,6 +327,10 @@ textarea {
 
   .hero {
     max-width: 100%;
+  }
+
+  #photoBox {
+    width: 75%;
   }
 }
 
