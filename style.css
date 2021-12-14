@@ -141,6 +141,8 @@ a {
 
 #innerBox button a {
   text-decoration: none;
+  font-size: smaller;
+  white-space: nowrap;
 }
 
 /* TOOLBOX -------------------------------------- */
@@ -155,7 +157,7 @@ a {
   font-size: 3em;
 }
 
-#vsIcon {
+.toolIcon {
   height: 3em;
 }
 
@@ -182,7 +184,6 @@ a {
   column-gap: 30px;
   row-gap: 50px;
   padding: 20px;
-  /* max-height: 0; */
   transition: max-height 0.2s ease out;
 }
 
@@ -193,10 +194,6 @@ a {
 .collapsed {
   display: none;
   overflow: none;
-}
-
-.active {
-  /* background: rgb(152, 119, 119); */
 }
 
 .test {
@@ -360,3 +357,21 @@ textarea {
 }
 
 /* FOOTER --------------------------------------- */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  padding: 10px;
+  background: linear-gradient(to top, rgb(169, 69, 107), rgb(247, 212, 182));
+}
+
+footer a i {
+  transition: 1s ease;
+}
+
+footer a i:hover {
+  transform: rotate(360deg);
+  /* transform: scale(1.2); */
+}
