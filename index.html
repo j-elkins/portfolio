@@ -27,6 +27,7 @@
   </head>
 
   <body>
+    <div id="responsive Box"></div>
     <header class="hero">
       <img src="/headshot.png" id="headshot" alt="Headshot" />
       <h1>I'm Jasmine</h1>
@@ -56,58 +57,56 @@
 
     <main>
       <section id="about" class="section">
-        <div id="photoBox">
-          <h1>About Me</h1>
-          <h4 class="tagline">
-            A creative and curiousity-driven programmer with an eye for details.
-          </h4>
-          <div id="innerBox">
-            <p id="bio">
-              I love creating beautiful things, and I'm excited about bringing
-              both the technical and visual aspects of a project to life. I'm
-              happiest when I'm learning, creating, and exploring new things
-              (and places!)
-            </p>
-            <p>
-              I have a BA in Biology from the
-              <a href="https://www.rit.edu" target="_blank"
-                >Rochester Institute of Technology</a
-              >, a certificate in Responsive Web Design from
-              <a href="https://www.freecodecamp.org" target="_blank"
-                >www.freecodecamp.org</a
-              >, and in June 2022 I'll complete the Software Engineering
-              Immersive program at
-              <a href="https://flatironschool.com" target="_blank"
-                >Flatiron School</a
-              >.
-            </p>
-            <p>
-              I'm passionate about: rock climbing, painting, sustainability,
-              learning new languages, dancing, and traveling. In 2019 I left my
-              career as a chemist and bought an old Sprinter van. After learning
-              everything from construction to electrical systems and building my
-              van into a tiny home, I spent a year living on the road, traveling
-              the country from coast to coast.
-            </p>
-            <p>
-              Currently based in NYC and looking for an internship or junior
-              role to support a small creative team while further developing my
-              coding and design skills.
-            </p>
+        <h1>About Me</h1>
+        <h4 class="tagline">
+          A creative and curiousity-driven programmer with an eye for details.
+        </h4>
+        <div id="innerBox">
+          <p id="bio">
+            I love creating beautiful things, and I get excited about bringing
+            both the technical and visual aspects of a project to life. I'm
+            happiest when I'm learning, creating, and exploring new things (and
+            places!)
+          </p>
+          <p>
+            I have a BA in Biology from the
+            <a href="https://www.rit.edu" target="_blank"
+              >Rochester Institute of Technology</a
+            >, a certificate in Responsive Web Design from
+            <a href="https://www.freecodecamp.org" target="_blank"
+              >www.freecodecamp.org</a
+            >, and in June 2022 I'll complete the Software Engineering Immersive
+            program at
+            <a href="https://flatironschool.com" target="_blank"
+              >Flatiron School</a
+            >.
+          </p>
+          <p>
+            I'm passionate about: rock climbing, painting, sustainability,
+            learning new languages, dancing, and traveling. In 2019 I left my
+            career as a chemist and bought an old Sprinter van. After learning
+            everything from construction to electrical systems and building my
+            van into a tiny home, I spent a year living on the road, traveling
+            the country from coast to coast.
+          </p>
+          <p>
+            Currently based in NYC and looking for an internship or junior role
+            to support a small creative team while further developing my coding
+            and design skills.
+          </p>
 
-            <!-- <p>
+          <!-- <p>
               I'm happiest when I'm learning, creating, and exploring new things
               (and places!) Currently looking for an internship or junior role
               to support a small team while further developing my coding and
               design skills.
             </p> -->
 
-            <button>
-              <a href="https://manyroadstohere.blogspot.com" target="_blank"
-                >Follow my journey here</a
-              >
-            </button>
-          </div>
+          <button>
+            <a href="https://manyroadstohere.blogspot.com" target="_blank"
+              >Follow my journey here</a
+            >
+          </button>
         </div>
       </section>
 
@@ -158,8 +157,8 @@
         <h1>Recent Work</h1>
 
         <div class="gridContainer">
-          <article>
-            <div class="img-container">
+          <div class="tile">
+            <div class="imgContainer">
               <img
                 src="/etchasketch.png"
                 alt="Screenshot of Etch-A-Sketch app"
@@ -177,10 +176,10 @@
             </div>
             <h4>Etch-A-Sketch</h4>
             <p>Features multiple colors and rainbow mode</p>
-          </article>
+          </div>
 
-          <article>
-            <div class="img-container">
+          <div class="tile">
+            <div class="imgContainer">
               <img
                 src="/booklibrary.png"
                 alt="Screenshot of Book Library app"
@@ -198,10 +197,10 @@
             </div>
             <h4>Book Library</h4>
             <p>Create a list of books you've read or want to read</p>
-          </article>
+          </div>
 
-          <article>
-            <div class="img-container">
+          <div class="tile">
+            <div class="imgContainer">
               <img
                 src="/rockpaperscissors.png"
                 alt="Screenshot of Rock, Paper, Scissors app"
@@ -219,10 +218,10 @@
             </div>
             <h4>Rock, Paper, Scissors</h4>
             <p>Play a game of 5 rounds against the computer</p>
-          </article>
+          </div>
 
-          <article>
-            <div class="img-container">
+          <div class="tile">
+            <div class="imgContainer">
               <img
                 src="/tictactoenew.jpg"
                 alt="Screenshot of Tic Tac Toe app"
@@ -240,7 +239,7 @@
             </div>
             <h4>Tic Tac Toe</h4>
             <p>Play a game against another player</p>
-          </article>
+          </div>
         </div>
 
         <button type="button" class="collapsibleBtn">
@@ -253,8 +252,8 @@
           ><span id="span">&nbsp View Full Portfolio</span>
         </button>
         <div id="fullPortfolio" class="gridContainer collapsed">
-          <article>
-            <div class="img-container">
+          <div class="tile">
+            <div class="imgContainer">
               <img
                 src="/calculator.png"
                 alt="Screenshot of Calculator app"
@@ -272,7 +271,7 @@
             </div>
             <h4>Calculator</h4>
             <p>Simple calculator with 4 calculation functions</p>
-          </article>
+          </div>
         </div>
       </section>
 
@@ -313,6 +312,7 @@
         </div>
       </section> -->
     </main>
+
     <footer>
       <p>
         Designed & built by Jasmine Elkins &nbsp; | &nbsp; December 2021

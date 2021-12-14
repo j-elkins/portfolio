@@ -116,18 +116,7 @@ a {
   margin: 10px;
   font-style: italic;
   color: rgb(112, 50, 75);
-}
-
-#photoBox {
-  /* background: url("/teddy.JPG");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+  text-align: center;
 }
 
 #innerBox {
@@ -137,6 +126,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 75%;
 }
 
 #innerBox button a {
@@ -162,9 +152,9 @@ a {
 }
 
 .tool {
-  /* display: inline-flex; */
+  display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-around; */
   white-space: nowrap;
   text-align: center;
   margin: 10px;
@@ -201,7 +191,7 @@ a {
   background-color: #f1f1f1;
 }
 
-.img-container {
+.imgContainer {
   position: relative;
 }
 
@@ -230,11 +220,11 @@ a {
   text-decoration: none;
 }
 
-.img-container:hover .thumbnail {
+.imgContainer:hover .thumbnail {
   opacity: 0.3;
 }
 
-.img-container:hover .middle {
+.imgContainer:hover .middle {
   opacity: 1;
 }
 
@@ -325,10 +315,6 @@ textarea {
   .hero {
     max-width: 100%;
   }
-
-  #photoBox {
-    width: 75%;
-  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -356,10 +342,14 @@ textarea {
   }
 }
 
-/* Custom, iPhone Retina */
+/* for iPhone */
 @media only screen and (max-width: 600px) {
   body {
-    margin: 20;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
     background: red;
   }
 
@@ -382,10 +372,24 @@ textarea {
     color: #333;
   }
 
-  /* .thumbnail {
+  .tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .thumbnail {
+    width: 75%;
     height: auto;
-    width: 100%;
-  } */
+  }
 }
 
 /* Extra Small Devices, Phones */
