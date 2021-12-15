@@ -17,14 +17,16 @@ main {
 
 button {
   padding: 20px 30px;
-  border: 3px solid rgb(247, 212, 224);
+  border: 3px solid rgb(244, 234, 219);
   border-radius: 11px;
   font-family: "Gruppo", Calibri, sans-serif;
-  background: rgb(227, 176, 176);
+  background: rgb(240, 185, 185);
   font-size: 16px;
   margin-top: 50px;
   transition: 0.5s ease;
   width: 200px;
+  font-size: smaller;
+  white-space: nowrap;
 }
 
 button:hover {
@@ -55,8 +57,10 @@ a {
 
 /* HEADER --------------------------------------- */
 .hero {
-  /* font-family: "La Belle Aurore", cursive; */
-  background: linear-gradient(rgb(169, 69, 107), rgb(247, 200, 159));
+  background: linear-gradient(
+    rgba(169, 69, 107, 0.877),
+    rgba(247, 200, 159, 0.851)
+  );
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,6 +69,11 @@ a {
   text-align: center;
   max-width: 200px;
 }
+
+/* .hero h1 {
+  font-family: "La Belle Aurore", cursive;
+  font-size: 40px;
+} */
 
 .hero h2 {
   color: rgba(255, 218, 185, 0.756);
@@ -76,11 +85,12 @@ a {
   margin-top: 5px;
 }
 
-#headshot {
+.portrait {
+  display: inline-block;
   border: none;
-  border-radius: 50px;
-  width: 100px;
-  height: auto;
+  border-radius: 50%;
+  width: auto;
+  height: 200px;
 }
 
 #locationIcon {
@@ -88,6 +98,11 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+
+#earth {
+  vertical-align: middle;
+  font-size: 1.5em;
 }
 
 #iconContainer {
@@ -131,8 +146,6 @@ a {
 
 #innerBox button a {
   text-decoration: none;
-  font-size: smaller;
-  white-space: nowrap;
 }
 
 /* TOOLBOX -------------------------------------- */
@@ -154,7 +167,7 @@ a {
 .tool {
   display: inline-flex;
   flex-direction: column;
-  /* justify-content: space-around; */
+  /* justify-content: space-between; */
   white-space: nowrap;
   text-align: center;
   margin: 10px;
@@ -243,6 +256,11 @@ p {
   margin: 5px 0 0 0;
 }
 
+/* #collapsibleBtn {
+  padding: 0;
+  white-space: nowrap;
+} */
+
 /* GET IN TOUCH --------------------------------- */
 /* #contactContainer {
   display: flex;
@@ -299,11 +317,60 @@ textarea {
   font-size: 1.5em;
 } */
 
+/* FOOTER --------------------------------------- */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  padding: 10px;
+  background: linear-gradient(
+    to top,
+    rgba(250, 103, 137, 0.742),
+    rgba(249, 211, 178, 0.769)
+  );
+  margin-top: 100px;
+}
+
+footer a i {
+  transition: 1s ease;
+}
+
+footer a i:hover {
+  transform: rotate(360deg);
+  /* transform: scale(1.2); */
+}
+
+#altFooter {
+  display: none;
+  overflow: hidden;
+}
+
 /* MEDIA QUERIES -------------------------------- */
 @media screen and (max-width: 1200px) {
   .gridContainer {
     grid-template-columns: repeat(2, 400px);
     grid-template-rows: repeat(auto, 300px);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hidden {
+    display: none !important;
+    overflow: hidden !important;
+  }
+
+  #altFooter {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    padding: 0px;
+    width: 100%;
+    margin-top: 100px;
   }
 }
 
@@ -355,6 +422,13 @@ textarea {
 
   .hero {
     max-width: 100%;
+  }
+
+  #locationIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
   }
 
   #innerBox {
@@ -409,24 +483,4 @@ textarea {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-}
-
-/* FOOTER --------------------------------------- */
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: static;
-  padding: 10px;
-  background: linear-gradient(to top, rgb(169, 69, 107), rgb(247, 212, 182));
-}
-
-footer a i {
-  transition: 1s ease;
-}
-
-footer a i:hover {
-  transform: rotate(360deg);
-  /* transform: scale(1.2); */
 }

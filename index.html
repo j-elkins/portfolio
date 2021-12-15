@@ -29,14 +29,17 @@
   <body>
     <div id="responsive Box"></div>
     <header class="hero">
-      <img src="/headshot.png" id="headshot" alt="Headshot" />
+      <div class="headshot">
+        <img src="/headshot.png" class="portrait" alt="Portrait" />
+      </div>
+
       <h1>I'm Jasmine</h1>
       <h2>Software Engineering Student</h2>
       <h3>rock climber, scientist, artist, explorer</h3>
 
       <div id="locationIcon">
         <ion-icon name="earth-outline" id="earth"></ion-icon>
-        <p>&nbsp New York, NY</p>
+        <p style="font-weight: bold">&nbsp; New York, NY</p>
       </div>
 
       <div id="iconContainer">
@@ -311,9 +314,23 @@
           </div>
         </div>
       </section> -->
+      <div id="altFooter">
+        <footer>
+          <p>
+            Designed & built by Jasmine Elkins &nbsp; | &nbsp; December 2021
+            &nbsp;&nbsp;
+            <a href="https://github.com/jasmineelkins/tic-tac-toe">
+              <i
+                class="fab fa-github"
+                style="font-size: 1.5em; color: #333"
+              ></i>
+            </a>
+          </p>
+        </footer>
+      </div>
     </main>
 
-    <footer>
+    <footer class="footer hidden">
       <p>
         Designed & built by Jasmine Elkins &nbsp; | &nbsp; December 2021
         &nbsp;&nbsp;
